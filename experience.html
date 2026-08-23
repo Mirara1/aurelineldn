@@ -12,7 +12,7 @@
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition-duration:.01ms!important}}
 .collection{grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 18px}.prices,.qr-prices{grid-template-columns:repeat(4,1fr)}.price-card{padding-inline:20px}.price{font-size:clamp(2rem,3vw,3.35rem)}
 @media(max-width:820px){.prices,.qr-prices{grid-template-columns:1fr}}
-</style><script>document.documentElement.classList.add("js");
+.reveal{opacity:1!important;transform:none!important}</style><script>document.documentElement.classList.add("js");
 const menu=document.querySelector("[data-menu]");
 if(menu){menu.addEventListener("click",()=>{const open=document.body.classList.toggle("nav-open");menu.setAttribute("aria-expanded",String(open))});document.querySelectorAll(".links a").forEach(a=>a.addEventListener("click",()=>{document.body.classList.remove("nav-open");menu.setAttribute("aria-expanded","false")}))}
 document.querySelectorAll("[data-year]").forEach(n=>n.textContent=new Date().getFullYear());
